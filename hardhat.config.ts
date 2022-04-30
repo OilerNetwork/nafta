@@ -31,12 +31,13 @@ const config: HardhatUserConfig = {
       optimizer: {
         enabled: true,
         runs: 999999,
-        details: {
-          yul: false,
-          yulDetails: {
-            stackAllocation: true,
-          },
-        },
+        // Uncomment this for coverage tests (otherwise "stack too deep" appears):
+        // details: {
+        //   yul: true,
+        //   yulDetails: {
+        //     stackAllocation: true,
+        //   },
+        // },
       },
     },
   },

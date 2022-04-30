@@ -26,7 +26,7 @@ Docs: https://docs.oiler.network/oiler-network/products/nafta
 
 ## Coverage
 
-1. change `yul:` to `true` in `hardhat.config.ts` optimizer settings
+1. Uncomment `details` section in `hardhat.config.ts` optimizer
 2. `npx hardhat coverage`
 3. Look at `coverage/index.html` for details
 
