@@ -1,4 +1,12 @@
-# Nafta contracts
+# Nafta contracts (by Oiler.network)
+
+This repo contains solidity contracts for Nafta marketplace.
+
+Nafta is a platform that facilitates NFT Flash Loans & Long Term Renting without any collateral.
+
+Website: https://nafta.market
+
+Docs: https://docs.oiler.network/oiler-network/products/nafta
 
 ## Installation
 
