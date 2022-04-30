@@ -1,0 +1,24 @@
+{
+  "1": {
+    "WETH9": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "USDC": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+    "flashLender": "0x50d0d93f9bbc464a189bff73b376d5388c877b6e",
+    "nafta": "0x5D097eBfc47A2fC41B4A3cb16fDD6bc93435Fbdd",
+    "uniswapWrapper": "0x2Ef97d5f5b55561f391EbFb3C8c277fFd7e34635"
+  },
+  "3": {
+    "WETH9": "0x9234c079B471C68919Aecf48462c16378934c149",
+    "nafta": "0x66B111157F9D4b5978f364B3d4f9fe441f244C46"
+  },
+  "4": {
+    "WETH9": "0xF4Cf9F21d34BBeEAAB3827bfd2d7aa03AEC7de4b",
+    "uniswapWrapper": "0xA38bcF5647F13e383669838B5BBdfd050dd330a7",
+    "nafta": "0xd5af299f7f73758d9af1982236c22FCde0eC42ff"
+  },
+  "5": {
+    "WETH9": "0x12e506eb1ad0a1d006a97A540dCE9b331692105D",
+    "uniswapWrapper": "0xfdE78EEC3e9511778B970fBafa2FCE3eBa1BF5e9",
+    "nafta": "0x70e728f2464Eb9C85aa0469CdeB97473AF46145e"
+  }
+}
