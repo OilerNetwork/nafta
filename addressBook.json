@@ -5,7 +5,11 @@
     "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
     "flashLender": "0x50d0d93f9bbc464a189bff73b376d5388c877b6e",
     "nafta": "0x5D097eBfc47A2fC41B4A3cb16fDD6bc93435Fbdd",
-    "uniswapWrapper": "0x2Ef97d5f5b55561f391EbFb3C8c277fFd7e34635"
+    "uniswapWrapper": "0x2Ef97d5f5b55561f391EbFb3C8c277fFd7e34635",
+    "decentralandLand": "0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d",
+    "decentralandEstate": "0x959e104e1a4db6317fa58f8295f586e1a978c297",
+    "decentralandLandOwner": "0x0bdec0bd8b8dc86d32a603f04d0e7ca0539bb17c",
+    "decentralandEstateOwner": "0x9b7aac7f32561ba6aae2938c0f9322703d7bb3b4"
   },
   "3": {
     "WETH9": "0x9234c079B471C68919Aecf48462c16378934c149",
