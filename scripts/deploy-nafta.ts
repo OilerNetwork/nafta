@@ -8,6 +8,7 @@ import { handleEtherscanVerification } from "./utils/handle-etherscan-verificati
 import { getCurrentGas } from "./utils/estimate-gas";
 import { utils } from "ethers";
 import { wait } from "./utils/wait";
+import { estimateDeploymentGas } from "./utils/estimateDeploymentGas";
 
 async function deployMockWETH(): Promise<MockWETH> {
   let mockWETH: MockWETH;
@@ -91,14 +92,18 @@ async function main() {
     console.log(`\n\tWETH9: ${WETH9Address}\n`);
     await confirmInput("if above data is correct");
 
+    const estimatedGas = await estimateDeploymentGas(Nafta__factory, deployer, [ownerAddress, WETH9Address]);
+
     const currentGasPrice = await getCurrentGas(ethercan_api_key);
     console.log(`\nCurrent ETH Mainnet gas price is: ${currentGasPrice}`);
     const deploymentMaxFeePerGas = parseFloat((await handleInteractiveInput("maxFeePerGas")) as string);
     const deploymentMaxPriorityFee = parseFloat((await handleInteractiveInput("maxPriorityFee")) as string);
 
-    const gasCosts = (deploymentMaxFeePerGas * 4734360) / 1e9;
+    const gasCosts = (deploymentMaxFeePerGas * estimatedGas) / 1e9;
     console.log(
-      `\nDeploying NAFTA contract (4734360 gas) with ${deploymentMaxFeePerGas.toFixed(10)} gwei gas price will cost: ${gasCosts.toFixed(4)} ETH`,
+      `\nDeploying NAFTA contract (${estimatedGas} gas) with ${deploymentMaxFeePerGas.toFixed(10)} gwei gas price will cost: ${gasCosts.toFixed(
+        4,
+      )} ETH`,
     );
 
     if (gasCosts > deployerBalance) {
@@ -113,6 +118,7 @@ async function main() {
     const nafta = await naftaFactory.deploy(ownerAddress, WETH9Address, {
       maxFeePerGas: utils.parseUnits(deploymentMaxFeePerGas.toFixed(10), "gwei"),
       maxPriorityFeePerGas: utils.parseUnits(deploymentMaxPriorityFee.toFixed(10), "gwei"),
+      gasLimit: estimatedGas + 10000,
     });
     console.log(`txHash: ${nafta.deployTransaction.hash}`);
     console.log(`expected address: ${nafta.address}`);

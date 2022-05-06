@@ -12,15 +12,18 @@
     "decentralandEstateOwner": "0x9b7aac7f32561ba6aae2938c0f9322703d7bb3b4"
   },
   "3": {
+    "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
     "WETH9": "0x9234c079B471C68919Aecf48462c16378934c149",
     "nafta": "0x66B111157F9D4b5978f364B3d4f9fe441f244C46"
   },
   "4": {
+    "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
     "WETH9": "0xF4Cf9F21d34BBeEAAB3827bfd2d7aa03AEC7de4b",
     "uniswapWrapper": "0xA38bcF5647F13e383669838B5BBdfd050dd330a7",
     "nafta": "0xd5af299f7f73758d9af1982236c22FCde0eC42ff"
   },
   "5": {
+    "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
     "WETH9": "0x12e506eb1ad0a1d006a97A540dCE9b331692105D",
     "uniswapWrapper": "0xfdE78EEC3e9511778B970fBafa2FCE3eBa1BF5e9",
     "nafta": "0x70e728f2464Eb9C85aa0469CdeB97473AF46145e",
