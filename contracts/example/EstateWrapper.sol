@@ -103,7 +103,7 @@ contract EstateWrapper is IFlashNFTReceiver, ERC721, ERC721Holder {
   }
 
   function tokenURI(uint256 tokenId) public pure override returns (string memory) {
-    return string.concat("https://api.decentraland.org/v2/contracts/0x959e104E1a4dB6317fA58F8295F586e1A978c297/tokens/", toString(tokenId));
+    return string.concat("https://api.decentraland.org/v2/contracts/0x959e104e1a4db6317fa58f8295f586e1a978c297/tokens/", toString(tokenId));
   }
 
   //////////////////////////////////////
