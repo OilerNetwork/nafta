@@ -9,7 +9,9 @@
     "decentralandLand": "0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d",
     "decentralandEstate": "0x959e104e1a4db6317fa58f8295f586e1a978c297",
     "decentralandLandOwner": "0x0bdec0bd8b8dc86d32a603f04d0e7ca0539bb17c",
-    "decentralandEstateOwner": "0x9b7aac7f32561ba6aae2938c0f9322703d7bb3b4"
+    "decentralandEstateOwner": "0x9b7aac7f32561ba6aae2938c0f9322703d7bb3b4",
+    "landWrapper": "0xC9582031c94BC97D1CeF466A092324B137393172",
+    "estateWrapper": "0xe49a52B093E5c2a99D2DB7F47Ba649E3884A6790"
   },
   "3": {
     "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
