@@ -35,5 +35,12 @@
     "decentralandEstate": "0xAcb796a94630AA94649E61D39B978b7dC798C209",
     "landWrapper": "0x47fa2D73A35aEFb2F75Ca7d5A2969271122E1AeD",
     "estateWrapper": "0xb4287b3F032FD4C3977D6f5959d730C3D58D20b2"
+  },
+  "137": {
+    "WETH9": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+    "USDC": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
+    "nafta": "0x5D097eBfc47A2fC41B4A3cb16fDD6bc93435Fbdd",
+    "uniswapWrapper": "0x2Ef97d5f5b55561f391EbFb3C8c277fFd7e34635"
   }
 }

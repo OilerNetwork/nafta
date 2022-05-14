@@ -66,9 +66,9 @@ async function main() {
 
     const gasCosts = (deploymentMaxFeePerGas * estimatedGas) / 1e9;
     console.log(
-      `\nDeploying NAFTA contract (${estimatedGas} gas) with ${deploymentMaxFeePerGas.toFixed(10)} gwei gas price will cost: ${gasCosts.toFixed(
-        4,
-      )} ETH`,
+      `\nDeploying UniswapWrapper contract (${estimatedGas} gas) with ${deploymentMaxFeePerGas.toFixed(
+        10,
+      )} gwei gas price will cost: ${gasCosts.toFixed(4)} ETH`,
     );
 
     if (gasCosts > deployerBalance) {

@@ -9,7 +9,7 @@ import "@typechain/hardhat";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-const { ETHERSCAN_API_KEY } = process.env;
+const { ETHERSCAN_API_KEY, POLYGONSCAN_API_KEY } = process.env;
 const {
   FORK_URL,
   ROPSTEN_URL,
@@ -22,6 +22,8 @@ const {
   GOERLI_PRIV_KEY,
   MAINNET_URL,
   MAINNET_PRIV_KEY,
+  POLYGON_URL,
+  POLYGON_PRIV_KEY,
 } = process.env;
 
 const config: HardhatUserConfig = {
@@ -75,12 +77,27 @@ const config: HardhatUserConfig = {
       url: KOVAN_URL!,
       accounts: [KOVAN_PRIV_KEY!],
     },
+    polygon: {
+      chainId: 137,
+      url: POLYGON_URL!,
+      accounts: [POLYGON_PRIV_KEY!],
+    },
   },
   mocha: {
     timeout: 9999999999,
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY,
+    apiKey: {
+      //ethereum
+      mainnet: ETHERSCAN_API_KEY,
+      ropsten: ETHERSCAN_API_KEY,
+      rinkeby: ETHERSCAN_API_KEY,
+      goerli: ETHERSCAN_API_KEY,
+      kovan: ETHERSCAN_API_KEY,
+      //polygon
+      polygon: POLYGONSCAN_API_KEY,
+      polygonMumbai: POLYGONSCAN_API_KEY,
+    },
   },
 };
 
