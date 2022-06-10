@@ -11,7 +11,8 @@
     "decentralandLandOwner": "0x0bdec0bd8b8dc86d32a603f04d0e7ca0539bb17c",
     "decentralandEstateOwner": "0x9b7aac7f32561ba6aae2938c0f9322703d7bb3b4",
     "landWrapper": "0xC9582031c94BC97D1CeF466A092324B137393172",
-    "estateWrapper": "0xe49a52B093E5c2a99D2DB7F47Ba649E3884A6790"
+    "estateWrapper": "0xe49a52B093E5c2a99D2DB7F47Ba649E3884A6790",
+    "ENSRegistrar": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85"
   },
   "3": {
     "nonfungiblePositionManager": "0xc36442b4a4522e871399cd717abdd847ab11fe88",
@@ -34,7 +35,9 @@
     "decentralandLand": "0xc85ee35b0D8822cDa3Ad922617C3d79362cE11B5",
     "decentralandEstate": "0xAcb796a94630AA94649E61D39B978b7dC798C209",
     "landWrapper": "0x47fa2D73A35aEFb2F75Ca7d5A2969271122E1AeD",
-    "estateWrapper": "0xb4287b3F032FD4C3977D6f5959d730C3D58D20b2"
+    "estateWrapper": "0xb4287b3F032FD4C3977D6f5959d730C3D58D20b2",
+    "ENSRegistrar": "0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85",
+    "ensWrapper": "0x2a8d7550e5528aA1406C109ac3D0F1Cad8ceB57d"
   },
   "137": {
     "WETH9": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
